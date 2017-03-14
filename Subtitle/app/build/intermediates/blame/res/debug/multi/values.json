@@ -1,0 +1,167 @@
+[
+    {
+        "outputFile": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 49,
+                    "endOffset": 100
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endColumn": 49,
+                        "endOffset": 64
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 290,
+                    "endColumn": 45,
+                    "endOffset": 331
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 58,
+                        "endColumn": 45,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 336,
+                    "endColumn": 53,
+                    "endOffset": 385
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 53,
+                        "endOffset": 154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 390,
+                    "endColumn": 56,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 160,
+                        "endColumn": 56,
+                        "endOffset": 212
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 447,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 739
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 231,
+                        "endLine": 15,
+                        "endColumn": 12,
+                        "endOffset": 526
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 744,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 899
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 567,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 724
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 904,
+                    "endLine": 27,
+                    "endColumn": 12,
+                    "endOffset": 1546
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 1,
+                        "startOffset": 729,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 1371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1551,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 1705
+                },
+                "from": {
+                    "file": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1378,
+                        "endLine": 36,
+                        "endColumn": 12,
+                        "endOffset": 1532
+                    }
+                }
+            }
+        ]
+    }
+]

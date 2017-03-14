@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/build/intermediates/res/merged/debug/layout/videoview_controller.xml",
+        "source": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/layout/videoview_controller.xml"
+    },
+    {
+        "merged": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/build/intermediates/res/merged/debug/layout/resolution_item.xml",
+        "source": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/layout/resolution_item.xml"
+    },
+    {
+        "merged": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/build/intermediates/res/merged/debug/layout/activity_subtitle.xml",
+        "source": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/layout/activity_subtitle.xml"
+    },
+    {
+        "merged": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/gaolei/Work/Note/Github Project/VideoSubtitle/Subtitle/app/src/main/res/layout/activity_main.xml"
+    }
+]

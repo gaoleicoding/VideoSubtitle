@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbffffff"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:onClick="jumpToMain"
+        android:padding="10dp"
+        android:text="跳转到下个Activity\n通过感应器来判断横竖屏"
+        android:textColor="#99000000"
+        android:textSize="16sp" />
+    <RelativeLayout
+        android:id="@+id/videoview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/srt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <include
+            android:id="@+id/media_controller"
+            layout="@layout/videoview_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/buffering_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/buffering_progress"
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
