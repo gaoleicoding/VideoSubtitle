@@ -3,6 +3,6 @@
 的demo资源在material文件夹
 
 
-![image](https://github.com/gaoleiandroid1201/BiuBike/raw/master/screenshots/1.png)
+![image](https://github.com/gaoleiandroid1201/VideoSubtitle/raw/master/screenshots/1.png)
 
-![image](https://github.com/gaoleiandroid1201/BiuBike/raw/master/screenshots/2.png)
+![image](https://github.com/gaoleiandroid1201/VideoSubtitle/raw/master/screenshots/2.png)
