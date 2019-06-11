@@ -36,7 +36,6 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import viewlp.MainActivity;
 /**
  * 1、实现匹配srt字幕
  * 2、设置ActivityInfo的sensor来实现横竖屏，然后进行VideoView的大小屏切换，即使横竖屏切换被禁止也能用，
@@ -130,8 +129,8 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-//		String rawUri = "android.resource://" + getPackageName() + "/" + R.raw.renwei;
-		Uri uri = Uri.parse(Constant.videoUrl1);
+		String rawUri = "android.resource://" + getPackageName() + "/" + R.raw.video;
+		Uri uri = Uri.parse(rawUri);
 		//设置视频控制器
 //        videoView.setMediaController(new MediaController(this));
 		//播放完成回调
@@ -405,7 +404,7 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 		}
 	}
 	public void jumpToMain(View view){
-		startActivity(new Intent(this, MainActivity.class));
+		startActivity(new Intent(this, SwitchOrientationActivity.class));
 	}
 
 	public void onRestart(){

@@ -104,7 +104,6 @@ public class CustomVideoView extends TextureView implements MediaPlayerControl {
 	public void initVideoView() {
 		mVideoHeight = 0;
 		mVideoWidth = 0;
-		setBackgroundColor(getResources().getColor(android.R.color.transparent));
 		setFocusable(false);
 		setSurfaceTextureListener(mSurfaceTextureListener);
 	}

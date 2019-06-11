@@ -9,7 +9,7 @@
         android:layout_marginTop="0.2dp"
         android:background="#000000" >
 
-        <viewlp.CustomVideoView
+        <VideoView
             android:id="@+id/sf_play"
             android:layout_width="fill_parent"
             android:layout_height="250dp" />

@@ -24,17 +24,14 @@ public class SrtParser {
     public static void parseSrt(Context context) {
         InputStream inputStream = null;
         try {
-//            inputStream=context.getResources().openRawResource(R.raw.renwei2);
-            inputStream = new FileInputStream(Constant.srtUrl1);
+            inputStream = context.getResources().openRawResource(R.raw.subtitle);
             // TODO Auto-generated catch block
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     inputStream,"GB2312"));
             String line = null;
             srtList = new ArrayList<SRT>();
             StringBuffer sb = new StringBuffer();
-//    int key = 0;
             while ((line = br.readLine()) != null) {
-//   Log.d("gaolei", "br.readLine()-----------"+br.readLine());
 
                 if (!line.equals("")) {
                     Log.d("gaolei","line-------------------"+ line);
@@ -102,7 +99,6 @@ public class SrtParser {
 
     public static void showSRT(VideoView videoView,TextView tvSrt) {
 
-//    	Log.d("gaolei", "srt_map.size()--------------"+srt_map.size());
         int currentPosition = videoView.getCurrentPosition();//vv是VideoView播放器
 
         if(currentPosition>lastEndTime){
@@ -114,9 +110,6 @@ public class SrtParser {
             if (currentPosition > srtbean.getBeginTime()
                     && currentPosition < srtbean.getEndTime()) {
 
-                //Html.fromHtml可以解析出字幕内容的格式
-//    	Spanned srtBodyHtml = Html.fromHtml(srtbean
-//    	.getSrtBody());
                 tvSrt.setText(srtbean.getSrtBody());
                 //显示过的就删掉，提高查询效率
                 srtList.remove(i);

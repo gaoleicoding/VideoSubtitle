@@ -4,10 +4,7 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
-<!-- 往SDCard写入数据权限 -->
+    <!-- 往SDCard写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
@@ -29,7 +26,7 @@
         </activity>
         android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name="viewlp.MainActivity"
+            android:name=".SwitchOrientationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
     </application>
 
