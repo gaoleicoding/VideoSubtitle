@@ -101,8 +101,6 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 		videoViewHeight = screenWidth * 9 / 16;
 		tvSrt = (TextView)findViewById(R.id.srt);//项目中显示字幕的控件
 		mediacontroller_file_name= (TextView)findViewById(R.id.mediacontroller_file_name);
-//		String[]splitStr=Constant.videoUrl1.split("/");
-//		mediacontroller_file_name.setText(splitStr[splitStr.length-1]);
 		mTotalTime = (TextView) findViewById(R.id.mediacontroller_time_total);
 		mCurrentTime = (TextView) findViewById(R.id.mediacontroller_time_current);
 		resolution_switch = (TextView) findViewById(R.id.resolution_switch);
@@ -216,15 +214,10 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 					@Override
 					public void onItemClick(AdapterView<?> arg0, View arg1,
 											int position, long arg3) {
-						// TODO Auto-generated method stub
-//						// currentPosition = videoView.getCurrentPosition();
-//						currentPosition = videoView.getCurrentPosition();
-//						Log.d("gaolei", "currentPosition---------1------"
-//								+ currentPosition);
+
 						VideoPathObject pathObject = videopathList
 								.get(position);
-////						playVideo(pathObject.videoUrl);
-//						adapter.changePosition(position);
+						adapter.changePosition(position);
 						resolution_switch.setText(pathObject.videoStatus);
 						resolution_listview.setVisibility(View.GONE);
 					}
@@ -238,7 +231,6 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 			mHandler.removeMessages(FADE_OUT);
 			mMediaController.setVisibility(View.GONE);
 			resolution_listview.setVisibility(View.GONE);
-//			isResolution = false;
 			mShowing = false;
 		} else {
 			mHandler.sendEmptyMessage(SHOW_PROGRESS);
@@ -327,7 +319,7 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
 		changeToSmallScreen();
 		/**
-		 * 这里点击按钮转屏，用户5秒内不转屏幕，将自动识别当前屏幕方向
+		 * 这里点击按钮转屏，用户5秒内不转到小屏，将自动识别当前屏幕方向
 		 */
 		autoSwitchScreenOrientation();
 	}
@@ -335,13 +327,16 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 	public void handToFullScreen() {
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
 		changeToFullScreen();
+		/**
+		 * 这里点击按钮转屏，用户5秒内不转到全屏，将自动识别当前屏幕方向
+		 */
 		autoSwitchScreenOrientation();
 	}
 
 	private void changeToFullScreen() {
 		isPortraint = false;
 		LayoutParams params = new RelativeLayout.LayoutParams(
-				LayoutParams.MATCH_PARENT, APPApplication.screenWidth);
+				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 		videoview_layout.setLayoutParams(params);
 		videoView.setLayoutParams(params);
 
@@ -402,9 +397,6 @@ public class SubtitleActivity extends Activity implements View.OnClickListener,O
 				resolution_listview.setVisibility(View.VISIBLE);
 				break;
 		}
-	}
-	public void jumpToMain(View view){
-		startActivity(new Intent(this, SwitchOrientationActivity.class));
 	}
 
 	public void onRestart(){

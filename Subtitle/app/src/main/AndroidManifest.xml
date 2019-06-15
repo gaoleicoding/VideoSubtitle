@@ -24,10 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        android:theme="@android:style/Theme.NoTitleBar" >
-        <activity
-            android:name=".SwitchOrientationActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
     </application>
 
 </manifest>

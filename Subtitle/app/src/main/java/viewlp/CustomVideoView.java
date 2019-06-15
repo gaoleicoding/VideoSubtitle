@@ -673,37 +673,4 @@ public class CustomVideoView extends TextureView implements MediaPlayerControl {
 		System.out.println("setVisibility: "+ visibility);
 		super.setVisibility(visibility);
 	}
-
-//	void addTimedTextSource (Context context, Uri uri, String mimeType)
-//	void addTimedTextSource (String path, String mimeType)
-	private void parseSrt(Context context){
-		try {
-//			String rawUri = "android.resource://" + context.getPackageName() + "/" + R.raw.renwei2;
-//			Uri uri = Uri.parse(rawUri);
-			mMediaPlayer.addTimedTextSource(Constant.srtUrl1, MediaPlayer.MEDIA_MIMETYPE_TEXT_SUBRIP);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		MediaPlayer.TrackInfo[] trackInfos = mMediaPlayer.getTrackInfo();
-
-		if (trackInfos != null && trackInfos.length > 0) {
-			for (int i = 0; i < trackInfos.length; i++) {
-				final MediaPlayer.TrackInfo info = trackInfos[i];
-
-
-				if (info.getTrackType() == MediaPlayer.TrackInfo.MEDIA_TRACK_TYPE_AUDIO) {
-					// mMediaPlayer.selectTrack(i);
-				} else if (info.getTrackType() == MediaPlayer.TrackInfo.MEDIA_TRACK_TYPE_TIMEDTEXT) {
-					mMediaPlayer.selectTrack(i);
-				}
-			}
-		}
-		mMediaPlayer.setOnTimedTextListener(new MediaPlayer.OnTimedTextListener() {
-			@Override
-			public void onTimedText(MediaPlayer mp, TimedText text) {
-				if (text != null) {
-				}
-			}
-		});
-	}
 }

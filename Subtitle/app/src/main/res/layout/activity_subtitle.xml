@@ -3,18 +3,6 @@
     android:layout_height="match_parent"
     android:background="#bbffffff"
     >
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:gravity="center"
-        android:onClick="jumpToMain"
-        android:padding="10dp"
-        android:text="跳转到下个Activity\n通过感应器来判断横竖屏"
-        android:textColor="#99000000"
-        android:textSize="16sp" />
     <RelativeLayout
         android:id="@+id/videoview_layout"
         android:layout_width="match_parent"
